@@ -1,0 +1,33 @@
+.industry-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.industry-card:hover {
+  background: var(--grad-primary);
+  transform: translateY(-5px);
+  box-shadow: var(--neon-glow);
+  border-color: transparent;
+}
+
+.industry-icon {
+  color: var(--electric-cyan);
+  font-size: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.industry-card:hover .industry-icon {
+  color: var(--premium-white);
+}
+
+.industry-name {
+  color: var(--premium-white);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}

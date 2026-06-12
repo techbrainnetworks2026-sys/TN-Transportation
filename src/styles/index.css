@@ -1,0 +1,172 @@
+:root {
+  /* Colors */
+  --bg-dark: #030712;
+  /* Deep obsidian/slate black background */
+  --deep-navy: #090e1a;
+  /* Rich Space Black / Deep Carbon Obsidian */
+  --transportation-blue: #2563eb;
+  /* Electric Propulsive Blue */
+  --electric-cyan: #00f0ff;
+  /* Neon Cyber HUD Cyan - high visibility */
+  --future-purple: #8b5cf6;
+  /* Supersonic Quantum Purple */
+  --premium-white: #ffffff;
+  /* Ultra clean pure white */
+  --light-surface: #f8fafc;
+  /* Bright cockpit dashboard text white */
+  --dark-surface: #0f172a;
+  /* Cockpit Dashboard Dark Grey-Blue */
+  --success-green: #10b981;
+  /* Signal Safe Green */
+  --warning-orange: #ff5a00;
+  /* Kinetic Fast-Lane Amber / Safety Orange */
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, var(--transportation-blue) 0%, var(--future-purple) 100%);
+  /* Speed Transition */
+  --grad-purple: linear-gradient(135deg, var(--deep-navy) 0%, var(--future-purple) 100%);
+  --grad-cyan: linear-gradient(135deg, #00f0ff 0%, #2563eb 100%);
+  /* Kinetic Laser Line */
+  --grad-speed: linear-gradient(135deg, #ff5a00 0%, #ef4444 100%);
+  /* Kinetic Thrust Indicator */
+
+  /* Fonts */
+  --font-heading: 'Space Grotesk', sans-serif;
+  /* Highly technical heading font */
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+
+  /* Shadows */
+  --soft-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  --neon-glow: 0 0 25px rgba(0, 240, 255, 0.25);
+
+  /* Transitions */
+  --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--light-surface);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--premium-white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--deep-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--transportation-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--electric-cyan);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(11, 19, 41, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(3, 7, 18, 0.5);
+  transition: var(--transition-smooth);
+}
+
+/* Utility layout */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+/* Global Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.section-title span {
+  background: var(--grad-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  color: #94A3B8;
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-header {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
