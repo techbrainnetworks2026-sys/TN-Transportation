@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
-          Techbrain <span>Networks</span>
+          Techbrain Networks <span classname="sub logo1">Transportation</span>
         </Link>
 
         <div className="menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
