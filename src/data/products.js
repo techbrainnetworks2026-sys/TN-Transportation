@@ -2,9 +2,9 @@ export const products = [
   {
     id: "autonomous-vehicle-control",
     title: "Autonomous Vehicle Control and Navigation Software",
-    titleImage: "public/images/autonomous_car.webp",
+    titleImage: "/images/autonomous_car.webp",
     shortDescription: "AI-driven navigation software for self-driving cars with real-time road visualization.",
-    image: "public/images/product1.jpg",
+    image: "/images/product1.jpg",
     introduction: "Our Autonomous Vehicle Control and Navigation Software represents the pinnacle of AI mobility.",
     keyFeatures: [
       "Real-time 3D environment mapping",
@@ -28,7 +28,7 @@ export const products = [
     id: "intelligent-traffic-management",
     title: "Intelligent Traffic Management Solutions",
     shortDescription: "Smart city traffic dashboard for dynamic flow optimization.",
-    image: "public/images/product2.webp",
+    image: "/images/product2.webp",
     introduction: "A comprehensive platform that transforms urban traffic control into an adaptive, AI-powered system.",
     keyFeatures: [
       "Dynamic signal timing",
@@ -52,7 +52,7 @@ export const products = [
     id: "transportation-network-planning",
     title: "Transportation Network Planning and Optimization Platforms",
     shortDescription: "Transport logistics map visualization for optimal route planning.",
-    image: "public/images/product3.jpeg",
+    image: "/images/product3.jpeg",
     introduction: "Advanced simulation and planning software for large-scale transportation networks.",
     keyFeatures: [
       "Multi-modal routing",
@@ -76,7 +76,7 @@ export const products = [
     id: "ride-sharing-carpooling",
     title: "Ride-Sharing and Carpooling Applications",
     shortDescription: "Ride-sharing mobile app with real-time vehicle routing.",
-    image: "public/images/product4.jpg",
+    image: "/images/product4.jpg",
     introduction: "A scalable, secure, and user-friendly platform for next-generation ride-sharing.",
     keyFeatures: [
       "Real-time driver tracking",
@@ -100,7 +100,7 @@ export const products = [
     id: "public-transportation-ticketing",
     title: "Public Transportation Mobile Ticketing Systems",
     shortDescription: "Metro/train mobile digital ticket management platform.",
-    image: "public/images/product5.jpg",
+    image: "/images/product5.jpg",
     introduction: "A seamless, contactless digital ticketing ecosystem for modern public transit.",
     keyFeatures: [
       "NFC tap-to-pay",
@@ -124,7 +124,7 @@ export const products = [
     id: "intelligent-parking-management",
     title: "Intelligent Parking Management and Reservation Software",
     shortDescription: "Smart parking technology dashboard for urban spaces.",
-    image: "public/images/product6.jpg",
+    image: "/images/product6.jpg",
     introduction: "An automated system to optimize parking space utilization in crowded urban centers.",
     keyFeatures: [
       "Real-time space availability",
@@ -148,7 +148,7 @@ export const products = [
     id: "ev-charging-management",
     title: "Electric Vehicle Charging Infrastructure Management Software",
     shortDescription: "EV charging smart station monitoring and control.",
-    image: "public/images/product7.jpg",
+    image: "/images/product7.jpg",
     introduction: "The central nervous system for operating and scaling EV charging networks.",
     keyFeatures: [
       "Station health monitoring",
@@ -172,7 +172,7 @@ export const products = [
     id: "real-time-passenger-info",
     title: "Real-time Passenger Information and Engagement Apps",
     shortDescription: "Airport/train passenger smart app for live updates.",
-    image: "public/images/product8.jpg",
+    image: "/images/product8.jpg",
     introduction: "A unified platform keeping passengers informed and engaged throughout their journey.",
     keyFeatures: [
       "Live vehicle tracking",
@@ -196,7 +196,7 @@ export const products = [
     id: "freight-management-optimization",
     title: "Freight Management and Optimization Platforms",
     shortDescription: "Freight truck logistics system for supply chain efficiency.",
-    image: "public/images/product9.jpg",
+    image: "/images/product9.jpg",
     introduction: "An enterprise-grade platform for end-to-end freight and cargo logistics management.",
     keyFeatures: [
       "Load matching algorithm",
@@ -220,7 +220,7 @@ export const products = [
     id: "fleet-telematics-tracking",
     title: "Fleet Telematics and Vehicle Tracking Systems",
     shortDescription: "GPS fleet monitoring dashboard with real-time analytics.",
-    image: "public/images/product10.jpg",
+    image: "/images/product10.jpg",
     introduction: "A comprehensive IoT solution for monitoring fleet health, location, and driver behavior.",
     keyFeatures: [
       "Live GPS tracking",
@@ -244,7 +244,7 @@ export const products = [
     id: "traffic-signal-synchronization",
     title: "Traffic Signal Synchronization and Adaptive Control",
     shortDescription: "AI-controlled smart traffic lights for seamless flow.",
-    image: "public/images/product11.jpg",
+    image: "/images/product11.jpg",
     introduction: "An intelligent control system that synchronizes traffic lights across city grids to minimize stops.",
     keyFeatures: [
       "Green wave optimization",
@@ -268,7 +268,7 @@ export const products = [
     id: "uam-traffic-control",
     title: "Urban Air Mobility (UAM) Traffic Control Solutions",
     shortDescription: "Flying taxis and drone traffic management in smart cities.",
-    image: "public/images/product12.jpg",
+    image: "/images/product12.jpg",
     introduction: "The foundational air traffic control software for the emerging eVTOL and drone industry.",
     keyFeatures: [
       "3D airspace geofencing",
@@ -292,7 +292,7 @@ export const products = [
     id: "high-speed-rail-planning",
     title: "High-Speed Rail Planning and Management Software",
     shortDescription: "Futuristic bullet train network operations platform.",
-    image: "public/images/product13.jpg",
+    image: "/images/product13.jpg",
     introduction: "A precision-engineered platform for managing the complexities of high-speed rail networks.",
     keyFeatures: [
       "Millisecond scheduling",
@@ -316,7 +316,7 @@ export const products = [
     id: "toll-collection-pricing",
     title: "Toll Collection and Road Pricing Systems",
     shortDescription: "Smart toll plaza automation and dynamic pricing.",
-    image: "public/images/product14.jpg",
+    image: "/images/product14.jpg",
     introduction: "Next-generation electronic tolling that eliminates physical barriers and optimizes road usage.",
     keyFeatures: [
       "Multi-lane free flow (MLFF)",
@@ -340,7 +340,7 @@ export const products = [
     id: "autonomous-drone-delivery",
     title: "Autonomous Drone Delivery Management Platforms",
     shortDescription: "Autonomous delivery drones fleet orchestration.",
-    image: "public/images/product15.jpg",
+    image: "/images/product15.jpg",
     introduction: "An orchestration platform designed to manage last-mile delivery via autonomous drone fleets.",
     keyFeatures: [
       "Automated payload attachment",
@@ -364,7 +364,7 @@ export const products = [
     id: "traffic-data-analytics",
     title: "Traffic Data Analytics and Visualization Software",
     shortDescription: "Transportation analytics dashboard for urban planners.",
-    image: "public/images/product16.jpg",
+    image: "/images/product16.jpg",
     introduction: "A powerful BI tool specifically engineered for transportation authorities and urban planners.",
     keyFeatures: [
       "Heatmap generation",
@@ -388,7 +388,7 @@ export const products = [
     id: "airport-operations-management",
     title: "Airport Operations Management Systems",
     shortDescription: "Smart airport operations center and resource allocation.",
-    image: "public/images/product17.jpg",
+    image: "/images/product17.jpg",
     introduction: "A holistic control platform that synchronizes all airside and landside airport activities.",
     keyFeatures: [
       "Gate allocation optimization",
@@ -412,7 +412,7 @@ export const products = [
     id: "railway-asset-management",
     title: "Railway Asset Management and Maintenance Software",
     shortDescription: "Railway maintenance monitoring dashboard and predictive care.",
-    image: "public/images/product18.jpg",
+    image: "/images/product18.jpg",
     introduction: "A proactive maintenance platform designed to keep railway networks running safely and efficiently.",
     keyFeatures: [
       "Predictive component failure",
@@ -436,7 +436,7 @@ export const products = [
     id: "pedestrian-cyclist-safety",
     title: "Pedestrian and Cyclist Safety Monitoring Solutions",
     shortDescription: "Smart road pedestrian monitoring for vulnerable users.",
-    image: "public/images/product19.jpeg",
+    image: "/images/product19.jpeg",
     introduction: "An AI-powered system designed to protect the most vulnerable road users at intersections and crosswalks.",
     keyFeatures: [
       "Real-time object detection",
@@ -460,7 +460,7 @@ export const products = [
     id: "hyperloop-traffic-control",
     title: "Hyperloop Traffic Control and Management Software",
     shortDescription: "Futuristic hyperloop transportation system orchestration.",
-    image: "public/images/product20.jpg",
+    image: "/images/product20.jpg",
     introduction: "The pioneering software platform designed to manage the extreme speeds and tight tolerances of Hyperloop networks.",
     keyFeatures: [
       "Vacuum tube environment monitoring",
