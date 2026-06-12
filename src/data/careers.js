@@ -3,7 +3,6 @@ export const careers = [
   "CAD/CAM Designer",
   "DFT Engineer",
   "FARM-stack Developer",
-  "FPGA Engineer",
   "Hardware Design & Testing",
   "IOS Developer",
   "Machine Learning Engineer",
