@@ -1,54 +1,50 @@
+/* ============================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================ */
 :root {
-  /* Colors */
   --bg-dark: #030712;
-  /* Deep obsidian/slate black background */
   --deep-navy: #090e1a;
-  /* Rich Space Black / Deep Carbon Obsidian */
   --transportation-blue: #2563eb;
-  /* Electric Propulsive Blue */
   --electric-cyan: #00f0ff;
-  /* Neon Cyber HUD Cyan - high visibility */
   --future-purple: #8b5cf6;
-  /* Supersonic Quantum Purple */
   --premium-white: #ffffff;
-  /* Ultra clean pure white */
   --light-surface: #f8fafc;
-  /* Bright cockpit dashboard text white */
   --dark-surface: #0f172a;
-  /* Cockpit Dashboard Dark Grey-Blue */
   --success-green: #10b981;
-  /* Signal Safe Green */
   --warning-orange: #ff5a00;
-  /* Kinetic Fast-Lane Amber / Safety Orange */
 
-  /* Gradients */
   --grad-primary: linear-gradient(135deg, var(--transportation-blue) 0%, var(--future-purple) 100%);
-  /* Speed Transition */
-  --grad-purple: linear-gradient(135deg, var(--deep-navy) 0%, var(--future-purple) 100%);
-  --grad-cyan: linear-gradient(135deg, #00f0ff 0%, #2563eb 100%);
-  /* Kinetic Laser Line */
-  --grad-speed: linear-gradient(135deg, #ff5a00 0%, #ef4444 100%);
-  /* Kinetic Thrust Indicator */
+  --grad-purple:  linear-gradient(135deg, var(--deep-navy) 0%, var(--future-purple) 100%);
+  --grad-cyan:    linear-gradient(135deg, #00f0ff 0%, #2563eb 100%);
+  --grad-speed:   linear-gradient(135deg, #ff5a00 0%, #ef4444 100%);
 
-  /* Fonts */
   --font-heading: 'Space Grotesk', sans-serif;
-  /* Highly technical heading font */
-  --font-body: 'Inter', sans-serif;
-  --font-accent: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-accent:  'Space Grotesk', sans-serif;
 
-  /* Shadows */
-  --soft-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-  --neon-glow: 0 0 25px rgba(0, 240, 255, 0.25);
+  --soft-shadow:  0 10px 40px rgba(0, 0, 0, 0.7);
+  --neon-glow:    0 0 25px rgba(0, 240, 255, 0.25);
 
-  /* Transitions */
   --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  /* Spacing scale */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  40px;
+  --space-xl:  60px;
+  --space-2xl: 100px;
 }
 
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,16 +57,19 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--premium-white);
+  line-height: 1.2;
 }
 
 a {
@@ -88,25 +87,17 @@ button {
   font-family: var(--font-body);
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--deep-navy); }
+::-webkit-scrollbar-thumb { background: var(--transportation-blue); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--electric-cyan); }
 
-::-webkit-scrollbar-track {
-  background: var(--deep-navy);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--transportation-blue);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--electric-cyan);
-}
-
-/* Glassmorphism Classes */
+/* ============================================================
+   GLASSMORPHISM
+   ============================================================ */
 .glass-panel {
   background: rgba(11, 19, 41, 0.65);
   backdrop-filter: blur(16px);
@@ -117,28 +108,32 @@ button {
   transition: var(--transition-smooth);
 }
 
-/* Utility layout */
+/* ============================================================
+   LAYOUT UTILITIES
+   ============================================================ */
 .container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--space-md);
 }
 
 .section {
-  padding: 100px 0;
+  padding: var(--space-2xl) 0;
 }
 
-/* Global Section Headers */
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: var(--space-xl);
 }
 
 .section-title {
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-sm);
   letter-spacing: -0.5px;
 }
 
@@ -150,23 +145,135 @@ button {
 
 .section-subtitle {
   color: #94A3B8;
-  font-size: 1.15rem;
-  max-width: 800px;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   SHARED BUTTON STYLES
+   ============================================================ */
+.btn-primary {
+  display: inline-block;
+  background: var(--grad-primary);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--transportation-blue);
+  box-shadow: var(--neon-glow);
+  color: var(--electric-cyan);
+}
+
+/* ============================================================
+   PAGE HEADER (About / Services / Careers / Contact)
+   ============================================================ */
+.page-header {
+  padding: 160px var(--space-md) var(--space-xl);
+  background: linear-gradient(135deg, rgba(3, 7, 18, 0.95), rgba(11, 19, 41, 0.95)),
+              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-sm);
+}
+
+.page-header span {
+  color: var(--transportation-blue);
+}
+
+.page-header p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #e2f0e7;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* Tablet */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: var(--space-xl) 0;
   }
   .section-header {
-    margin-bottom: 40px;
+    margin-bottom: var(--space-lg);
+  }
+  .container {
+    padding: 0 var(--space-sm);
+  }
+  .page-header {
+    padding: 120px var(--space-sm) var(--space-lg);
+  }
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+  .section {
+    padding: var(--space-lg) 0;
+  }
+  .section-header {
+    margin-bottom: var(--space-md);
+  }
+  .container {
+    padding: 0 var(--space-sm);
   }
   .section-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
   .section-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .page-header {
+    padding: 100px var(--space-sm) var(--space-md);
+  }
+  .page-header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+  }
+  .page-header p {
+    font-size: 0.9rem;
+  }
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 375px) {
+  :root {
+    --space-xs: 6px;
+    --space-sm: 12px;
+    --space-md: 16px;
+  }
+  .section-title {
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
   }
 }

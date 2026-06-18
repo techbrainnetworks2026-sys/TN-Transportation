@@ -56,6 +56,31 @@
   .industries-grid {
     grid-template-columns: 1fr;
   }
+  .products-grid {
+    gap: 20px;
+  }
+  .services-grid {
+    gap: 20px;
+  }
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .p-30 {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .products-grid,
+  .industries-grid,
+  .services-grid,
+  .why-choose-grid {
+    gap: 15px;
+  }
+  .p-30 {
+    padding: 15px;
+  }
 }
 
 .why-choose-grid {

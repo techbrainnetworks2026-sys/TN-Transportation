@@ -13,5 +13,12 @@
 @media screen and (max-width: 768px) {
   .products-grid-full {
     grid-template-columns: 1fr;
+    gap: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products-grid-full {
+    gap: 20px 15px;
   }
 }

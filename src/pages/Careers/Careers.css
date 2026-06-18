@@ -78,6 +78,73 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #CBD5E1;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .job-card {
+    padding: 20px 16px;
+  }
+  .job-title {
+    font-size: 1.1rem;
+  }
+  .job-meta {
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .jobs-grid {
+    gap: 16px;
+  }
+  .job-card {
+    padding: 16px 12px;
+  }
+  .job-card-header {
+    margin-bottom: 12px;
+  }
+  .job-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  .job-type {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+  }
+  .job-title {
+    font-size: 1rem;
+    min-height: 50px;
+    margin-bottom: 12px;
+  }
+  .job-meta {
+    gap: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+  .job-skills {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .skill-badge {
+    padding: 3px 10px;
+    font-size: 0.7rem;
+  }
+}
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 0.8rem;

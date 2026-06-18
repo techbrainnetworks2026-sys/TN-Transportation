@@ -72,3 +72,44 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .cta-section {
+    padding: 60px 0;
+  }
+  .cta-container {
+    padding: 30px 16px;
+    gap: 30px;
+  }
+  .cta-title {
+    font-size: 1.6rem;
+  }
+  .cta-desc {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    font-size: 1rem;
+    padding: 14px 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cta-section {
+    padding: 40px 0;
+  }
+  .cta-container {
+    padding: 24px 12px;
+    gap: 20px;
+  }
+  .cta-title {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  .cta-desc {
+    font-size: 0.9rem;
+  }
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 12px 28px;
+  }
+}

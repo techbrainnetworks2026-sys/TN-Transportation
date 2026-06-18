@@ -91,3 +91,35 @@
 .product-link:hover {
   text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
 }
+
+@media screen and (max-width: 768px) {
+  .product-image-container {
+    height: 160px;
+  }
+  .product-content {
+    padding: 20px;
+  }
+  .product-title {
+    font-size: 1.1rem;
+  }
+  .product-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-image-container {
+    height: 140px;
+  }
+  .product-content {
+    padding: 16px;
+  }
+  .product-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .product-desc {
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+}

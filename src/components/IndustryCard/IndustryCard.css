@@ -31,3 +31,29 @@
   font-weight: 500;
   transition: var(--transition-smooth);
 }
+
+@media screen and (max-width: 768px) {
+  .industry-card {
+    padding: 16px;
+    gap: 12px;
+  }
+  .industry-icon {
+    font-size: 1.3rem;
+  }
+  .industry-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .industry-card {
+    padding: 12px;
+    gap: 10px;
+  }
+  .industry-icon {
+    font-size: 1.2rem;
+  }
+  .industry-name {
+    font-size: 0.9rem;
+  }
+}

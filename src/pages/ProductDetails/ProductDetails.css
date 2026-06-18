@@ -18,6 +18,98 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .product-hero {
+    padding: 120px 0 80px;
+  }
+  .product-hero h1 {
+    font-size: 2rem;
+  }
+  .product-content-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .product-sidebar {
+    position: static;
+    top: auto;
+  }
+  .detail-section {
+    padding: 24px 16px;
+  }
+  .sidebar-widget {
+    padding: 20px 16px;
+  }
+  .sidebar-widget h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-hero {
+    padding: 80px 0 60px;
+  }
+  .product-hero h1 {
+    font-size: 1.4rem;
+  }
+  .detail-section {
+    padding: 16px 12px;
+    margin-bottom: 16px;
+  }
+  .detail-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  .detail-section p {
+    font-size: 0.9rem;
+  }
+  .workflow-text {
+    padding: 12px 16px;
+    font-size: 0.9rem !important;
+    margin-bottom: 12px;
+  }
+  .sidebar-widget {
+    padding: 16px 12px;
+  }
+  .sidebar-widget h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .feature-list {
+    gap: 12px;
+  }
+  .feature-list li {
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+  .tech-tags {
+    gap: 8px;
+  }
+  .tech-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+  .product-details-page {
+    padding-bottom: 60px;
+  }
+}
+
+.product-not-found {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-hero {
+  position: relative;
+  padding: 200px 0 120px;
+  text-align: center;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
 .product-hero-bg {
   position: absolute;
   top: 0;
