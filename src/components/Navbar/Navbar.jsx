@@ -10,59 +10,63 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
+  const navHref = (hash) =>
+    location.pathname === '/' ? hash : `/${hash}`;
+
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
+
+        {/* Logo */}
         <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
-          Techbrain Networks <span className='sub-title'>Transportation</span>
+          <span className="logo-main">Techbrain Networks</span>
+          <span className="logo-sub">Transportation</span>
         </Link>
 
-        <div className="menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        {/* Hamburger icon */}
+        <div
+          className="menu-icon"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
           {isMobileMenuOpen ? <HiX /> : <HiMenu />}
         </div>
 
+        {/* Nav links */}
         <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-          <li className="nav-item">
-            <a href={location.pathname === '/' ? '#home' : '/#home'} className="nav-links" onClick={closeMobileMenu}>
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href={location.pathname === '/' ? '#about' : '/#about'} className="nav-links" onClick={closeMobileMenu}>
-              About Us
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href={location.pathname === '/' ? '#products' : '/#products'} className="nav-links" onClick={closeMobileMenu}>
-              Products
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href={location.pathname === '/' ? '#services' : '/#services'} className="nav-links" onClick={closeMobileMenu}>
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href={location.pathname === '/' ? '#careers' : '/#careers'} className="nav-links" onClick={closeMobileMenu}>
-              Careers
-            </a>
-          </li>
+          {[
+            { label: 'Home',     hash: '#home' },
+            { label: 'About Us', hash: '#about' },
+            { label: 'Products', hash: '#products' },
+            { label: 'Services', hash: '#services' },
+            { label: 'Careers',  hash: '#careers' },
+          ].map(({ label, hash }) => (
+            <li className="nav-item" key={hash}>
+              <a
+                href={navHref(hash)}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+
           <li className="nav-item nav-btn">
-            <a href={location.pathname === '/' ? '#contact' : '/#contact'} className="btn-primary" onClick={closeMobileMenu}>
-              Contact 
+            <a
+              href={navHref('#contact')}
+              className="btn-primary"
+              onClick={closeMobileMenu}
+            >
+              Contact
             </a>
           </li>
         </ul>
