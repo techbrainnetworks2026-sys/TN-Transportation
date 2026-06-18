@@ -1,5 +1,7 @@
+import { IconBase } from "react-icons";
+
 export const industries = [
-  "Aerospace",
+  "Aerospace ",
   "Agriculture",
   "Automotive",
   "Chemical",

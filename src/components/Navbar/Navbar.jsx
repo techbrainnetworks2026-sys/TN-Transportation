@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
-          Techbrain Networks <span classname="sub logo1">Transportation</span>
+          Techbrain Networks <span className='sub-title'>Transportation</span>
         </Link>
 
         <div className="menu-icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -62,7 +62,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item nav-btn">
             <a href={location.pathname === '/' ? '#contact' : '/#contact'} className="btn-primary" onClick={closeMobileMenu}>
-              Contact Us
+              Contact 
             </a>
           </li>
         </ul>

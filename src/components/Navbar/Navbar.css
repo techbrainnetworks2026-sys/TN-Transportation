@@ -12,6 +12,17 @@
   transition: var(--transition-smooth);
 }
 
+.sub-title {
+  position: absolute;
+  bottom: 2px;
+  left: 17%;
+  transform: translateX(-50%);
+  color: var(--transportation-blue);
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+
+}
+
 .navbar.scrolled {
   background: rgba(3, 7, 18, 0.9);
   backdrop-filter: blur(10px);

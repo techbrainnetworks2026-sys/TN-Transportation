@@ -5,7 +5,7 @@ import './Stats.css';
 const statsData = [
   { value: "480", label: "Products" },
   { value: "24", label: "Industries" },
-  { value: "30", label: "Countries by 2027" },
+  { value: "30+", label: "Countries by 2027" },
   { value: "100+", label: "Experts" }
 ];
 

@@ -74,15 +74,15 @@
 .detail-section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: black;
+  color: rgb(74, 7, 181);
 }
 
 .detail-section h2 span {
-  color: var(--transportation-blue);
+  color:rgb(74, 7, 181);
 }
 
 .detail-section p {
-  color: #000000;
+  color: #ffffff;
   line-height: 1.8;
   font-size: 1.05rem;
 }
